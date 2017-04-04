@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <style>
+            .container{
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                border:1px solid #cccccc;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                padding: 20px;
+                -webkit-justify-content: space-between;
+                -ms-flex-align: center;
+                justify-content: space-between;
+            }
+            .container>div{
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+            .one{
+                border: 1px solid #f00;
+                width: 150px;
+                height: 120px;
+            }
+
+
+            .two{
+                width: 150px;
+                height: 100px;
+                border: 1px solid #f00;
+            }
+            .three{
+                width: 150px;
+                height: 40px;
+                border: 1px solid #f00;
+            }
+
+            .four{
+                width: 150px;
+                height: 200px;
+                border: 1px solid #0f0;
+            }
+
+            @media screen and (max-width: 640px) {
+             .container{
+                 -webkit-flex-wrap: wrap;
+                 flex-wrap: wrap;
+                 -webkit-align-items: flex-start;
+                 align-items: flex-start;
+             }
+                .four{
+                    -webkit-order: -1;
+                    order: -1;
+                }
+            }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="one"></div>
+         <div class="two"></div>
+         <div class="three"></div>
+         <div class="four"></div>
+     </div>
+</body>
+</html>

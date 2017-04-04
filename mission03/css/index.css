@@ -1,0 +1,50 @@
+* {margin:0;
+padding:0;}
+
+body {font-size:14px;padding:20px;}
+
+.wrap {
+background-color:#eee;
+border:1px solid #999;
+padding:20px;
+overflow:hidden;
+min-width: 600px;}
+
+.team_logo {width:160px;
+float:left;
+border:1px solid #999;
+background-color:#fff;
+padding:20px;}
+
+.team_logo img {float:left;}
+.team_logo p {display:block;
+width:80px;
+height:60px;
+text-align:center;
+font-weight:bold;
+float:left;
+}
+
+.content {padding:20px;
+border:1px solid #999;
+background-color:#fff;
+margin-left:220px;
+margin-right:140px;}
+
+
+.content p:nth-of-type(n+1) {
+text-indent:2em;
+line-height:1.5em;
+margin:20px auto;}
+
+.member_logo {width:120px;
+border:1px solid #999;
+background-color:#fff;
+float:right;}
+
+img {width:80px;
+height:80px;
+display:block;
+}
+.member_logo img {margin:20px;
+border:1px solid #999;}
