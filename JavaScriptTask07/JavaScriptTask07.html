@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScriptTask07</title>
+    <script src="JavaScriptTask07.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+        #tree{
+            height: 350px;
+        }
+        div{
+            display: -webkit-flex;
+            display: flex;
+            margin: 40px;
+            border:2px solid gray;
+            flex-grow: 1;
+            -webkit-flex-grow: 1;
+            transition: background-color 500ms;
+            -webkit-transition: background-color 500ms;
+        }
+        input{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="前序遍历">
+    <input type="button" value="中序遍历">
+    <input type="button" value="后序遍历">
+    <div id="tree">
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
